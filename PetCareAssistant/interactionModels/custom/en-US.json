@@ -1,0 +1,110 @@
+{
+  "interactionModel": {
+    "languageModel": {
+      "intents": [
+        {
+          "slots": [],
+          "name": "GetFeedingReminderIntent",
+          "samples": [
+            "give me a feeding reminder",
+            "what time should I feed my pet",
+            "when should I feed my pet"
+          ]
+        },
+        {
+          "slots": [],
+          "name": "GetGroomingTipIntent",
+          "samples": [
+            "give me a grooming tip",
+            "how should I groom my pet",
+            "tell me a grooming tip"
+          ]
+        },
+        {
+          "slots": [],
+          "name": "GetPetCareAdviceIntent",
+          "samples": [
+            "give me pet care advice",
+            "how do I take care of my pet",
+            "tell me some pet care advice"
+          ]
+        },
+        {
+          "slots": [],
+          "name": "SetMedicationReminderIntent",
+          "samples": [
+            "set a medication reminder",
+            "remind me to give medication",
+            "schedule a medication reminder"
+          ]
+        },
+        {
+          "slots": [],
+          "name": "ScheduleVetAppointmentIntent",
+          "samples": [
+            "schedule a vet appointment",
+            "make a vet appointment",
+            "book a vet visit"
+          ]
+        },
+        {
+          "name": "AMAZON.HelpIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.CancelIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.StopIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.NavigateHomeIntent",
+          "samples": []
+        },
+        {
+          "slots": [
+            {
+              "name": "action",
+              "type": "ActivityType"
+            },
+            {
+              "name": "time",
+              "type": "AMAZON.TIME"
+            }
+          ],
+          "name": "SetPetReminderIntent",
+          "samples": [
+            "kikikirah",
+            "Remind me to {action} my pet at {time} ",
+            "Set a reminder to {action} my pet at {time} "
+          ]
+        }
+      ],
+      "types": [
+        {
+          "values": [
+            {
+              "name": {
+                "value": "Walk"
+              }
+            },
+            {
+              "name": {
+                "value": "Play"
+              }
+            },
+            {
+              "name": {
+                "value": "Feed"
+              }
+            }
+          ],
+          "name": "ActivityType"
+        }
+      ],
+      "invocationName": "pet care assistant"
+    }
+  }
+}
